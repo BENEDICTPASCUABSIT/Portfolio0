@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img src="image.jpg" alt="Your Name">
+            <h1>Benedict Torres Pascua</h1>
+            <div class="text-container">
+                <h3 id="changing-text">UI/UX Design</h3>
+            </div>
+            <hr>
+            <div class="contacts">
+                <p>Email: Benedicttorrespascua@gmail.com</p>
+                <p>Phone: 09072328263</p>
+            </div>
+            <div class="extra-contacts">
+                <a href="https://www.linkedin.com/in/benedict-pascua-251154306/" target="_blank">
+                    <img src="link.png" alt="LinkedIn" class="contact-logo">
+                </a>
+                <a href="https://www.instagram.com/benedictpascua1/" target="_blank">
+                    <img src="insta.png" alt="Instagram" class="contact-logo">
+                </a>
+                <a href="https://www.facebook.com/benedict.pascua.12" target="_blank">
+                    <img src="fb.png" alt="Facebook" class="contact-logo">
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="right-container">
+            <nav>
+                <ul>
+                    <li><button class="tablink" onclick="openTab(event, 'about')">About</button></li>
+                    <li><button class="tablink" onclick="openTab(event, 'resume')">Resume</button></li>
+                    <li><button class="tablink" onclick="openTab(event, 'portfolio')">Portfolio</button></li>
+                </ul>
+            </nav>
+
+            <section id="about" class="tabcontent">
+                <h2>About Me</h2>
+                <p>Fresh IT graduate eager to develop skills and contribute to innovative projects. Committed to learning and growth, with a keen interest in web design and development. Possesses a basic understanding of troubleshooting and problem-solving. Seeking an opportunity to leverage academic knowledge and gain hands-on experience in a dynamic and collaborative environment.</p>
+            </section>
+
+            <section id="resume" class="tabcontent">
+                <h2>Resume</h2>
+                <div class="resume-scroll">
+                    <section class="scrollable-section">
+                        <h3>Education</h3>
+                        <p><strong>Bachelor of Science in Information Technology, Cum Laude</strong><br>
+                        Baguio College of Technology<br>
+                        July 2024</p>
+                        <!-- Add more sections as needed -->
+                    </section>
+
+                    <section class="resume-content">
+                        <h3>Skills</h3>
+                        <div class="skills-category">
+                            <h4>Web Design Tools</h4>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img src="html.png" alt="HTML">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="css-3.png" alt="CSS">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="js.png" alt="JavaScript">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="figma.png" alt="Figma">
+                                    <p>Figma</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h4>Programming Tools and Languages</h4>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img src="vscode.png" alt="VSCode">
+                                    <p>VSCode</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="notepad.png" alt="Notepad++">
+                                    <p>Notepad++</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="java.png" alt="Java">
+                                    <p>Java</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="c-sharp.png" alt="C#">
+                                    <p>C#</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="python.png" alt="Python">
+                                    <p>Python</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="laravel.png" alt="Laravel">
+                                    <p>Laravel</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="eclipse.png" alt="Eclipse">
+                                    <p>Eclipse</p>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="pycharm.png" alt="PyCharm">
+                                    <p>PyCharm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h4>Other Skills</h4>
+                            <div class="skills-grid">
+                               
+                                <div class="skill-item">
+                                    <!-- <img src="troubleshooting.png" alt="Troubleshooting"> -->
+                                    <p>Trouble<br>shooting</p>
+                                </div>
+                                <div class="skill-item">
+                                    <!-- <img src="leadership-icon.png" alt="Leadership"> -->
+                                    <p>Leadership</p>
+                                </div>
+                                <div class="skill-item">
+                                    <!-- <img src="problem-solving-icon.png" alt="Problem-solving"> -->
+                                    <p>Problem<br>solving</p>
+                                </div>
+                                <div class="skill-item">
+                                    <!-- <img src="team-collaboration-icon.png" alt="Team collaboration"> -->
+                                    <p>Team collaboration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="button-container">
+                    <button class="download-resume" onclick="window.open('resume.pdf', '_blank')">Download Resume/CV</button>
+                </div>
+            </section>
+
+            <section id="portfolio" class="tabcontent">
+                <h2>Portfolio</h2>
+                <div class="projects">
+                    <div class="project">
+                        <img src="lgrrc.png" alt="LGRRC Webpage">
+                        <h3>LGRRC Webpage</h3>
+                        <p>Developed a Local Government Resource Center webpage for information dissemination and resource sharing.</p>
+                        <a href="http://clgrrc.car.dilg.gov.ph/" target="_blank" class="visit-button">Visit</a>
+                    </div>
+                    <div class="project">
+                        <img src="lms.png" alt="LMS for LGU (CAPDEVPRO)">
+                        <h3>LMS for LGU (CAPDEVPRO)</h3>
+                        <p>Created a Learning Management System for local government units, facilitating training and capacity development programs.</p>
+                        <a href="http://capdevpro.car.dilg.gov.ph/" target="_blank" class="visit-button">Visit</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
